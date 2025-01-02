@@ -17,8 +17,11 @@ def func_2():
 
 
 def main():
-    func_10()
-    func_2()
+    t_10 = threading.Thread(target=func_10, name="t_10")
+    t_2 = threading.Thread(target=func_2, name="t_2")
+
+    t_10.start()
+    t_2.start()
 
 
 if __name__ == "__main__":
