@@ -24,6 +24,8 @@ def main():
     t_10.start()
     t_2.start()
 
+    t_10.join()
+    t_2.join()
 
 if __name__ == "__main__":
     main()
